@@ -1,15 +1,15 @@
 defmodule Saliente do
-  alias Saliente.FakeRepo
+  alias Saliente.Repo
   alias Saliente.Post
 
-  @repo FakeRepo
+  @repo Repo
 
   def get_all() do
-    @repo.get_all(Post)
+    @repo.all(Post)
   end
 
   def get_one(id) do
-    @repo.get_one(Post, id)
+    @repo.get_by(Post, id)
   end
 
   def get_by(attrs) do

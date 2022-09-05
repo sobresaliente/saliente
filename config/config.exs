@@ -44,6 +44,15 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+config :saliente, ecto_repos: [Saliente.Repo]
+
+config :saliente, Saliente.Repo,
+  database: "salientedb",
+  username: "postgres",
+  password: "exozeeqw1",
+  hostanem: "localhost",
+  port: "5432"
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{config_env()}.exs"

@@ -8,6 +8,7 @@ defmodule Saliente.Application do
   @impl true
   def start(_type, _args) do
     children = [
+      {Saliente.Repo, []}
       # Starts a worker by calling: Saliente.Worker.start_link(arg)
       # {Saliente.Worker, arg}
     ]
