@@ -3,6 +3,8 @@ defmodule Saliente.Post do
 
   schema "posts" do
     field :title, :string
+    field :text, :string
+    field :date, :string
     timestamps()
   end
 end
