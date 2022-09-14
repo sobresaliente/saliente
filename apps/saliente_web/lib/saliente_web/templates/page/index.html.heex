@@ -1,9 +1,13 @@
 <h1>Sobresaliente</h1>
-<h2> Daniil Toint </h2>
 <ul>
 <%= for post <- @posts do %>
-<li>
+<div>
+<h3>
 <%= post.title %>
-</li>
+</h3>
+<p><%= post.text %></p>
+<p><%= post.author %></p>
+<p><%= post.date %></p>
+</div>
 <% end %>
 </ul>
